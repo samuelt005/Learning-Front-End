@@ -4,33 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <div style="text-align: right; padding-right: 45%;">
-    <h1>Formulário:</h1>
-    <form method="post" action="/teste"></form>
-        <label for="name">Nome:</label>
-        <input type="text" name="name" id="name">
+<body class="body">
+<div class="background">
+    <br>
+    <h1 class="titulo">Formulário de <br> cadastro</h1>
+    <form method="post" action="/teste" class="formulario">
+        <label for="nome">Nome</label>
+        <br>
+        <input type="text" name="nome" id="nome" maxlength="30">
         <br>
         <br>
-        <label for="password">Senha:</label>
-        <input type="password" name="password" id="password" required="required">
+        <label for="sobrenome">Sobrenome</label>
+        <br>
+        <input type="text" name="sobrenome" id="sobrenome" maxlength="30">
         <br>
         <br>
-        <label for="password_confirm">Confirme sua senha:</label>
-        <input type="password" name="password_confirm" id="password_confirm" required="required">
+        <label for="cpf">CPF</label>
+        <br>
+		<input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="___.___.___-__" title="cpf" required="required" maxlength="14">
         <br>
         <br>
-        <label for="date">Data de nascimento:</label>
+        <label for="rg">RG</label>
+        <br>
+		<input type="text" name="rg" pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" placeholder="__.___.___-_" title="rg" required="required" maxlength="12">
+        <br>
+        <br>
+        <label for="orgao_rg">Orgão expedidor</label>
+        <br>
+        <input type="text" name="orgao_rg" id="orgao_rg" required="required" maxlength="6">
+        <br>
+        <br>
+        <label for="date">Data de nascimento</label>
+        <br>
         <input type="date" name="date" id="date" required="required">
-
-
-
-
         <br>
         <br>
-        <input type="submit">
-    </div>
+        <label for="genero">Gênero</label>
+        <br>
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminimo">Feminino</option>
+            <option value="outros">Outros</option>
+        </select>
+        <br>
+        <br>
+        <label for="outros_genero">Se outro, qual</label>
+        <br>
+        <input type="text" name="outros_genero" id="outros_genero" required="required" maxlength="10">
+        <br>
+        <br>
+        <label for="senha">Senha</label>
+        <br>
+        <input type="password" name="senha" id="senha" required="required" maxlength="16">
+        <br>
+        <br>
+        <label for="confirmar_senha">Confirme sua senha</label>
+        <br>
+        <input type="password" name="confirmar_senha" id="confirmar_senha" required="required" maxlength="16">
+        <br>
+        <br>
+        <label for="email">E-mail</label>
+        <br>
+        <input type="email" name="email" id="email" required="required">
+        <br>
+        <br>
+        <label for="termos_de_uso">Concorda com os <a href="/miranha.png">termos de uso</a>:</label>
+        <input type="checkbox" name="termos_de_uso" id="termos_de_uso" required="required">
+        <br>
+        <br>
+        <label for="ofertas">Deseja receber nossas ofertas por E-mail:</label>
+        <input type="checkbox" name="ofertas" id="ofertas">
+        <br>
+        <br>
+        <input type="submit" class="botao_de_enviar">
+        <br>
+        <br>
+    </form>
+</div>
 </body>
 </html>
