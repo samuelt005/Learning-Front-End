@@ -1,0 +1,15 @@
+a {
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+}
+
