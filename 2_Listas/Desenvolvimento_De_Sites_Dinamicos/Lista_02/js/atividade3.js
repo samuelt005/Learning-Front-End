@@ -6,21 +6,24 @@ function escolherOpcao() {
     Escolha uma opção:
     1 - Celsius para Fahrenheit
     2 - Fahrenheit para Celsius
+    0 - Sair
     `)
 }
 
 escolherOpcao();
 
-if (opcaoConversao == 1) {
-    let tempParaConverter = prompt("Insira uma temperatura em Celsius para converter:");
-    let tempConvertida = ((tempParaConverter * 9 / 5) + 32);
-    console.log(tempConvertida.toFixed(2) + " °F");
-    escolherOpcao();
-} else if (opcaoConversao == 2) {
-    let tempParaConverter = prompt("Insira uma temperatura em Fahrenheit para converter:");
-    let tempConvertida = ((tempParaConverter - 32) * 5 / 9);
-    console.log(tempConvertida.toFixed(2) + " °C");
-    escolherOpcao();
-} else {
-    escolherOpcao;
+while (opcaoConversao != 0) {
+    if (opcaoConversao == 1) {
+        let tempParaConverter = prompt("Insira uma temperatura em Celsius para converter:");
+        let tempConvertida = ((tempParaConverter * 9 / 5) + 32);
+        console.log(tempConvertida.toFixed(2) + " °F");
+        escolherOpcao();
+    } else if (opcaoConversao == 2) {
+        let tempParaConverter = prompt("Insira uma temperatura em Fahrenheit para converter:");
+        let tempConvertida = ((tempParaConverter - 32) * 5 / 9);
+        console.log(tempConvertida.toFixed(2) + " °C");
+        escolherOpcao();
+    } else {
+        escolherOpcao();
+    }   
 }

@@ -14,6 +14,6 @@ for (let i = 0; i < numerosParaSomar.length; i++) {
     total += parseInt(numerosParaSomar[i]);
 }
 
-let media = total / total.length;
+let media = total / numerosParaSomar.length;
 
 console.log(media);
