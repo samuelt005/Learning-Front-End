@@ -1,0 +1,41 @@
+button {
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.respostaQuestoes {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.respostaQuestoes form {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+p {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+}
