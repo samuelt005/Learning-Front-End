@@ -18,6 +18,7 @@ button {
     flex-direction: row;
     font-size: 32px;
     font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #272829;
 }
 
 .botoes {
@@ -36,7 +37,7 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #D8D9DA;
-    color: #FFFFFF;
+    color: #61677A;
     border: 2px solid #61677A;
     padding: 5px;
     text-align: center;
@@ -76,9 +77,19 @@ button {
     font-size: 32px;
 }
 
-.resultado p {
+.latLon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    margin: 20px 0;
+}
+
+.latLon p {
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .tabela {
@@ -87,7 +98,58 @@ button {
     border: 1px solid black;
 }
 
+.tabela th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
 .tabela tr, .tabela td {
     border: 1px solid black;
     text-align: center;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.tituloNoticias {
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    border: 1px solid #272829;
+    padding: 10px;
+    gap: 10px;
+}
+
+.noticia h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.noticia p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.noticia a {
+    font-size: 16px;
+    text-align: right;
+}
+
