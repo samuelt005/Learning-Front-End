@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="botoes">
+            <label for="lat">Insira sua latitude:</label>
+            <input id="lat" type="number" required>
+            <label for="lon">Insira sua longitude:</label>
+            <input id="lon" type="number" required>
+            <button class="atividadeA" type="submit" id="exibirPrevisao" >Buscar previsão do tempo</button>
+        </form>
+        <div>
+            <label for="exibirNoticias">Notícias:</label>
+            <button class="atividadeB" type="button" id="exibirNoticias">Buscar notícias atuais</button>
+        </div>
+        <div>
+            <label for="exibirTarefas">Lista de tarefas:</label>
+            <button class="atividadeC" type="button" id="exibirTarefas">Exibir lista</button>
+        </div>
+    </div>
+
+    <div class="resultado">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
