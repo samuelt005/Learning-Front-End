@@ -153,3 +153,10 @@ button {
     text-align: right;
 }
 
+#listaTarefas li {
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
