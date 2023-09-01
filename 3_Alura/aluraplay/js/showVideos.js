@@ -31,4 +31,4 @@ async function listVideo() {
     }
 }
 
-listVideo();
+window.addEventListener("load", listVideo);
